@@ -1,6 +1,8 @@
 /// @file
 /// Embedded bencode support, header definitions.
 // 2012-09-29 <jc@wippler.nl> http://opensource.org/licenses/mit-license.php
+#ifndef EmBencode_h
+#define EmBencode_h
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -125,3 +127,5 @@ protected:
   char level, *bufPtr; 
   uint8_t bufLen, count, next, last, state;
 };
+
+#endif
