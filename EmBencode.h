@@ -90,7 +90,7 @@ protected:
   /// or inherited from `EmBencode` to implement the actual writing of characters.
   // Fix Undefined symbols for architecture x86_64: "typeinfo for EmBencode", referenced from: typeinfo for BERadioEncoder in generic-f4c730.o
   // https://stackoverflow.com/questions/307352/g-undefined-reference-to-typeinfo/307381#307381
-  virtual void PushChar (char ch) = 0;
+  virtual void PushChar (char ch);
 };
 
 /// Decoder class, needs an external buffer to collect the incoming data.
